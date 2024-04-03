@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Project demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- favicon   -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/project.css">
+    <!-- boxiconscss -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- As a link -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <!-- As a heading  -->
+        <div class="container-fluid">
+            <a class="m-0 p-0 d-flex justify-content-between align-items-center navbar-brand" href="#">
+                <img src="./images/logo.png" height="70" width="150" alt="onlinefood">
+                <span class="text-uppercase fw-lighter">Thapa</span>
+            </a>
+
+            <div class="">
+                <button type="button" class="btn position-relative">
+                    <i class='bx bxs-chat'></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">5</span>
+                </button>
+
+                <button type="button" class="btn position-relative">
+                    <i class='bx bxs-happy-heart-eyes'></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-danger">9</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class='bx bx-search'></i>
+                </button>
+            </div>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark" href="#collection">collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark" href="#special">Specials</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-uppercase dropdown-toggle text-dark" href="#categories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            categories
+                        </a>
+                        <ul class="dropdown-menu bg-primary-subtle">
+                            <li><a class="dropdown-item" href="#categories">Royal Jewellery</a></li>
+                            <li><a class="dropdown-item" href="#categories">Diamong</a></li>
+                            <li><a class="dropdown-item" href="#categories">Silver</a></li>
+                            <li><a class="dropdown-item" href="#categories">Gold</a></li>
+                            <li><a class="dropdown-item" href="#categories">Platinum</a></li>
+                            <li><a class="dropdown-item" href="#categories">Stone</a></li>
+                            <li><a class="dropdown-item" href="#categories">Pearls</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark" href="#popular">popular</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- end of navbar -->
+    <header id="header" class="justify-content-center vh-100 carousel slide" data-bs-ride="carousel
+    " style="padding-top: 104px;">
+        <div class="m-lg-5 text-center container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-white
+                ">Best price and Offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white
+                ">New Collection</h1>
+                <a href="#" class="button mt-3">Order Now
+                </a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-white
+                ">Since 12 Years</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-white
+                ">Your Choice, Our priority</h1>
+                <a href="#" class="button mt-3">Review us
+                </a>
+            </div>
+        </div>
+
+        <button class="carousel carousel-dark slide carousel-control-prev" type="button" data-bs-target="#header"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel carousel-dark slide carousel-control-next" type="button" data-bs-target="#header"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </header>
+    <!-- collection -->
+    <section id="collection" class="py-5">
+        <section class="custom-header container-fluid mt-2">
+            <div class="title">
+                <h2 class="">
+                    OUR
+                    <br>
+                    COLLECTIONS
+                </h2>
+            </div>
+        </section>
+        <div class="row">
+            <div class="d-flex flex-wrap justify-content-center mt-5">
+                <li><a class="btns m-2 text-dark active-filter-btn" href="#all" role="button">All</a></li>
+                <li><a class="btns m-2 text-dark" href="#best" role="button">Best Collection</a></li>
+                <li><a class="btns m-2 text-dark" href="#featured" role="button">Featured</a></li>
+                <li><a class="btns m-2 text-dark" href="#new" role="button">New Arrivals</a></li>
+            </div>
+            <div class="collection-list mt-5">
+                <div class="">
+                    <div class="collection-img" id="all">
+                        <div id="best" class="row row-cols-1 row-cols-md-4 g-4 m-5">
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://i.pinimg.com/200x/d8/62/62/d862629854ab3cb49100a614b5a62bc5.jpg"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$1200</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Diamond Heavy jewellery</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTWfvgfx33d3Yr3DdjzvttwQAG54A-Ctj_ZA&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$75</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Silver Bangels</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMcTXJ9k4F9RJxFHEkGT-CLwxRaUh75Z-BWQ&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$100</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Silver Kanthi</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCx4qIQ2LZixqXqi_gnGfZoegpACKVHqwSQ&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$765</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tilari</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2o0x356Slm4wh3haXvc6gas6x3kg0mC0cIg&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$375</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Platinum Male Chain</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI4b44WGOa6x80Nc5UEIYRz0SzL3nT9HIJRQ&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$105</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Male Bracellet</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5PY4e-6UXGiwSWM3xvqbGLLUHm8bj_r4DgzNGb-L5T-qL942wNLC9fg7vdLp54UurXcs&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$155</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Silver Earring</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjmm8FPPTW3B47yldWg--SWg46m4l1VbO5VA&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$575</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Silver Necklace</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="featured" class="row row-cols-1 row-cols-md-4 g-4 m-5">
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3nkRbXG37t1JJZ62Oh8lc6TUt0JBuO6pqxg&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$575</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Stone Ring</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE-VOleusT-D66P3cNIBTWErmNAOQioT3GYw&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$475</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Blue Stone Necklace</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz9qGhSCMAxNRobF4b2y6HsnsAJFe5gTfW6A&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$135</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Male Silver Ring</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8HNCNIZEkNZf1WeqvMhC2CgOJ2mCYMB0wRg&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$1075</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">South Indian Jewellery</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKeeBnJSx7eih9i4H9BcCnIEIsSfBCl_0BxQ&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$700</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Jewellery</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi7kAI-FA2vN9PH16Z-wMIfBEAZO6L1ppydA&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$600</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bridal Earring</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXE4A2QHO_v6kwFDZGDp0suCeTlzdNkNFMbg&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$900</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gold Bangels</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://lh3.googleusercontent.com/gnRhgWgw16GodDYT8QCzwPuM_57jRsqH2B4UkiTnmXJ3wYuFYybKf8tJWeORZfz5sbvLn3a4s-bFjQkr4dS-no4tU-XbAcW6uO2iBQXn"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$300</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Simple Gold Earring</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div id="new" class="row row-cols-1 row-cols-md-4 g-4 m-5" S>
+
+                            <div class=" col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKaDvbeS1ESJE6Gj-6vTotIWfeQUcQVN57EhSBmdi2ERazmi3ziGiSzKSX-obrk3WcVQ&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$450</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Mangalchutra</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAQVbRwfEM27ATri4SZGeZhyMM4kmPeCMJxfja0YwM6g2n979uWpI3nqRtmjdOGZGqF-M&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$225</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Pearls Bangels</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGH6OOgUwmZYwvmdW9B0Csa8ifIbpU6ZqYzA&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$600</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Chain</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSKhJDO3njL2IRdqCOtZvEm2Io4m1G0W18g&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$1075</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Simple Diamond Ring</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF99dHk5LyXmSg43uOIiqNN6vyiVTZJqwx-w&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$1975</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bridal Set</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnkw6EQKOZ2-u9y7KSMCe7cYGl1cCAbCzC_Q&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$250</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Earring</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwJE6nWL9xDsnfGvRgOZQzVFku9auOmcIc7w&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$80</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bronch</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                        <i class='bx bx-star'></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow-lg">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJf8KBif65iJDGz-EwAsDNf92YBbo7ky8-2w&usqp=CAU"
+                                        class="card-img-top" width="150" height="200" alt="...">
+                                    <span class="fw-bold">$1500</span>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bridal jewellery</h5>
+                                        <button class="m-1 btn btn-primary">View details</button>
+
+                                    </div>
+                                    <div class="d-flex star-buttons">
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star'></i>
+                                        <i class='bx bxs-star-half'></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- end of collection part -->
+
+
+
+    <section id="special">
+        <section class="custom-header container-fluid mt-2">
+            <div class="title">
+                <h2 class="mb-lg-5">
+                    OUR
+                    <br>
+                    SPECIALS
+                </h2>
+            </div>
+        </section>
+        <!-- start of carousel section -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.wedmegood.com/wp-content/uploads/2022/04/Untitled-design-222.jpg"
+                        class="d-block w-100" height="600" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/001/731/817/original/1.jpg?1588684970"
+                        class="d-block w-100" height="600" s alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.ytimg.com/vi/CySy-IYm1Ig/maxresdefault.jpg" class="d-block w-100" height="600" s
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.southindiafashion.com/wp-content/uploads/2019/08/Types-of-Bridal-Jewellery.jpg"
+                        class="d-block w-100" height="600" s alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.southindiafashion.com/wp-content/uploads/2019/08/Jadau-Types-of-Bridal-Jewellery.jpg"
+                        class="d-block w-100" height="600" s alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.shaadisaga.com/shaadisaga_production/photos/pictures/000/664/996/new_large/unicorn_%284%29.jpg?1547626356"
+                        class="d-block w-100" height="600" s alt="...">
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- end of carousel section -->
+
+
+        <div class="container-fluid2 text-center mt-lg-5">
+            <p>BEST JEWELLERY COLLECTIONS</p>
+        </div>
+        <div class="row2">
+            <div class="container-fluid1 text-center">
+                <div class="row align-items-end">
+                    <div class="col">
+                        <img src="https://www.blingbridge.com/wp-content/uploads/2020/08/L02_6375a-scaled-e1596885666697.jpg"
+                            width="100%" height="31%" alt="">
+                    </div>
+                    <div class="col">
+                        <img src="https://i.pinimg.com/736x/ee/8c/fe/ee8cfe84f9358b844553437c8d0f9079--post-apocalyptic-nepali-bride.jpg"
+                            width="100%" height="31%" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="https://i0.wp.com/www.jeseekajewellers.com/wp-content/uploads/2021/02/Earring2-1.jpg?fit=1200%2C1200&ssl=1"
+                            width="100%" height="31%" alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid1 text-center">
+                <div class="row align-items-end">
+                    <div class="col">
+                        <img src="https://i.pinimg.com/736x/ee/8c/fe/ee8cfe84f9358b844553437c8d0f9079--post-apocalyptic-nepali-bride.jpg"
+                            width="100%" height="31%" alt="...">
+                    </div>
+                    <div class="col">
+                        <div class=" text-part d-flex text-uppercase col text-center">
+                            HERE, Is OUR SOME BEAUTIFUL COLLECTIONS
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img src="https://i0.wp.com/www.jeseekajewellers.com/wp-content/uploads/2021/02/Earring2-1.jpg?fit=1200%2C1200&ssl=1"
+                            width="100%" height="31%" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid1 text-center">
+                <div class="row align-items-end">
+                    <div class="col">
+                        <img src="https://www.blingbridge.com/wp-content/uploads/2020/07/L02_6383a-copy-wecompress.com_-e1593601659634.png"
+                            width="100%" height="31%" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="https://cdn1.jewelxy.com/live/img/business_product/360x360/r6TcMs662v_20221203174133.jpg"
+                            width="100%" height="31%" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/JC/MN/KY/2020419/antique-temple-bangles-with-matte-gold-plating-200576-500x500.JPG"
+                            width="100%" height="31%" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="popular" class="py-5">
+        <section class="custom-header container-fluid mt-2">
+            <section class="title">
+                <h2 class="">
+                    Our
+                    <br>
+                    POPULAR
+                </h2>
+            </section>
+        </section>
+        <div class="container-fluid3 text-center">
+            <div class="row">
+                <div class="col1 m-lg-5">
+                    <div class="semi-box mt-5">
+                        <img src="https://www.pngkit.com/png/full/340-3400395_guy-left-call-center-man-png.png"
+                            width="150px" height="150px" alt="">
+                    </div>
+                    <div class="demobox">
+                        <h1>Mr.Ram Prajapati</h1>
+                        <h4>Owner</h3>
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, soluta sed. Exercitationem
+                            nulla dolorum sequi, architecto excepturi aliquid hic sit.
+                            <br>
+                            <div class="social-icons">
+                                <a href="https:/www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                                <a href="https:/www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                                <a href="https:/www.instagram.com"><i class='bx bxl-instagram'></i></a>
+
+                            </div>
+                            
+                    </div>
+                </div>
+                <div class="col3 m-lg-5">
+                    <div class="semi-box mt-5">
+                        <img src="https://thumbs.dreamstime.com/b/thinking-business-woman-holding-hand-under-chin-arms-folded-looking-to-future-expression-doubt-positive-105275763.jpg"  width="150px" height="150px"  alt="" >
+                    </div>
+                    <div class="demobox">
+                        <h1>Miss Sarah Dhaurali</h1>
+                        <h4>Manager</h4>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsam aperiam aliquid facere quos explicabo voluptates quaerat obcaecati incidunt voluptatem?
+                        <br>
+                        <div class="social-icons">
+                            <a href="https:/www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                            <a href="https:/www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https:/www.instagram.com"><i class='bx bxl-instagram'></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col2 m-5">
+                    <div class="semi-box mt-5">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrmcntaB82njPu0_a794YEg9JDXZEslCcGiq9pLuk93agRbA4SDKarzOsz7EbbyW_IwE&usqp=CAU"  width="150px" height="150px"  alt="" >
+                    </div>
+                    <div class="demobox">
+                        <h1>Mr Manish Aryal</h1>
+                        <h4>Designer</h4>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsam aperiam aliquid facere quos explicabo voluptates quaerat obcaecati incidunt voluptatem?
+                        <br>
+                        <div class="social-icons">
+                            <a href="https:/www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                            <a href="https:/www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https:/www.instagram.com"><i class='bx bxl-instagram'></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col2 m-5">
+                    <div class="semi-box mt-5">
+                        <img src="https://www.pngmart.com/files/7/Guy-PNG-Picture.png"  width="150px" height="150px"  alt="" >
+                    </div>
+                    <div class="demobox">
+                        <h1>Mr Pratik Timalsena</h1>
+                        <h4>Worker</h4>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsam aperiam aliquid facere quos explicabo voluptates quaerat obcaecati incidunt voluptatem?
+                        <br>
+                        <div class="social-icons">
+                            <a href="https:/www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                            <a href="https:/www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https:/www.instagram.com"><i class='bx bxl-instagram'></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col2 m-5">
+                    <div class="semi-box mt-5">
+                        <img src="https://media.istockphoto.com/id/508905111/photo/surprised-woman.jpg?s=612x612&w=0&k=20&c=JDnYkVuM-H3CNLMmazboGl6NOa52GhxIO3bMpw0j-74="  width="150px" height="150px"  alt="" >
+                    </div>
+                    <div class="demobox">
+                        <h1>Madam Sarita Neupane</h1>
+                        <h4>Worker</h4>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti ipsam aperiam aliquid facere quos explicabo voluptates quaerat obcaecati incidunt voluptatem?
+                        <br>
+                        <div class="social-icons">
+                            <a href="https:/www.twitter.com"><i class='bx bxl-twitter'></i></a>
+                            <a href="https:/www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https:/www.instagram.com"><i class='bx bxl-instagram'></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- section part of About us -->
+    <section id="about" class="py-5">
+        <section class="custom-header container-fluid mt-2">
+            <section class="title">
+                <h2 class="">
+                    ABOUT
+                    <br>
+                    US
+                </h2>
+            </section>
+        </section>
+        </div>
+        <div class="mt-lg-5 contact-area">
+            <div class="container-fluid4">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="align-content-center contact-form">
+                            <form>
+                                <h2 class="bg-danger text-center">Your Personal Details</h2>
+                                <div class="form-group">
+                                    <label for="exampleInputfirstname">First Name</label>
+                                    <input type="firstname" class="form-control active" id="exampleInputfirstname"
+                                        placeholder="Yourfirstname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputlastname">Last Name</label>
+                                    <input type="lastname" class="form-control" id="exampleInputlastname"
+                                        placeholder="Yourlas  tname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputAge">Age</label>
+                                    <input type="Age" class="form-control" id="exampleInputAge" placeholder="Age">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail"
+                                        placeholder="example@gmail.com">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message" cols="30"
+                                        rows="8"></textarea>
+                                </div>
+                                <br>
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12 mt-lg-5">
+                        <div class="map-area">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28260.348223763423!2d85.28666570301705!3d27.700499873302068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c7495ffe4d%3A0xa8eefc8ecee7e439!2sGahana%20Griha!5e0!3m2!1sen!2snp!4v1683444662516!5m2!1sen!2snp"
+                                width="1500px" height="350px" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- bootsrap js  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+</body>
+<footer>
+    &copy; 1960 Jewellery Nepal. All Rights Reserved | Design by Thapa
+    <div class="social-icons">
+        <a href=" https:/www.twitter.com"><i class='bx bxl-twitter'></i></a>
+        <a href="https:/www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="https:/www.instagram.com"><i class='bx bxl-instagram'></i></a>
+    </div>
+    <div class="arrow-icons">
+        <a href=""><i class='bx bxs-chevrons-up'></i></a>
+    </div>
+</footer>
+
+</html>
